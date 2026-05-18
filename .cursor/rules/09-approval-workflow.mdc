@@ -1,0 +1,71 @@
+---
+description: Approval gates before executing code changes. Prevents accidental or unintended modifications.
+alwaysApply: false
+priority: high
+tags: [workflow, approval, safety]
+---
+
+# Approval Workflow Rule
+
+Before executing code changes, present the plan and wait for explicit approval.
+
+## When this rule applies
+
+Use when the user asks to:
+- implement a feature
+- refactor code
+- fix a bug
+- add dependencies
+- run potentially destructive commands
+
+## Steps
+
+### 1. Analyze
+
+Read the relevant files and understand the scope.
+
+### 2. Plan
+
+Present the execution plan before touching any code:
+
+```txt
+## Execution Plan
+
+**Files to change:**
+- file1: what will change
+- file2: what will change
+
+**Files to add:**
+- new-file: purpose
+
+**Verification:**
+- command to run
+
+**Risks:**
+- risk 1
+- risk 2
+
+Reply "yes", "approve", or "proceed" to execute.
+Reply "no" or "cancel" to stop.
+Reply "modify X" to adjust before execution.
+```
+
+### 3. Wait
+
+Do NOT execute until the user explicitly approves.
+
+### 4. Execute
+
+Only after approval. Execute exactly what was planned.
+
+### 5. Verify
+
+Run verification commands and report results.
+
+## Trivial tasks
+
+For trivial tasks (small fixes, one-line changes), use judgment — apply directly but summarize the change.
+
+## Emergency exception
+
+If the user says "just do it", "do it now", or similar urgent language, proceed immediately.

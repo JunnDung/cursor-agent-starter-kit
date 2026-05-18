@@ -1,6 +1,8 @@
 ---
 description: Core Cursor behavior for this workspace.
 alwaysApply: true
+priority: critical
+tags: [core, always-on, response-format]
 ---
 
 # Core Rules

@@ -4,6 +4,14 @@
 
 Review code changes for correctness, maintainability, security, and test coverage.
 
+## When to use
+
+Use this skill when the user asks to:
+- review code changes
+- check my changes
+- review this PR or diff
+- check for bugs or issues
+
 ## Steps
 
 1. Identify changed files.

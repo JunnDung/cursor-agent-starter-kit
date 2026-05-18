@@ -16,7 +16,7 @@ It provides:
 npm install
 npm run init
 npm run check
-npm run validate  # check skill structure
+npm run validate  # check skill & rule structure
 ```
 
 ## Skill Structure
@@ -26,6 +26,34 @@ Each skill uses the two-layer pattern:
 - `GUIDE.md` — On demand: deeper patterns, examples, edge cases
 
 See `.cursor/skills/routing.yaml` for the skill index.
+
+## Rule Structure
+
+Rules live in `.cursor/rules/` with frontmatter metadata:
+
+```yaml
+---
+description: One sentence summary.
+alwaysApply: true/false
+priority: high/medium/low
+tags: [tag1, tag2]
+---
+```
+
+Always-on rules: 00-core, 01-karpathy-behavior, 03-surgical-changes, 05-security.
+Task-specific rules: 02-agent-workflow, 04-architecture, 06-testing, 07-docs, 08-memory, 09-approval-workflow, 10-context-optimization, 11-rule-testing.
+
+## Workflows
+
+| Workflow | Use when |
+|---|---|
+| `plan.md` | Planning a feature |
+| `implement.md` | Building a feature |
+| `review.md` | Reviewing code |
+| `debug.md` | Debugging a bug |
+| `reflect.md` | Extracting learnings |
+| `evaluator-optimizer.md` | Quality assurance loops |
+| `human-gate.md` | Critical decision checkpoints |
 
 ## Project map
 

@@ -1,6 +1,8 @@
 ---
 description: Use when editing existing code. Make minimal, focused changes and avoid unrelated refactors.
 alwaysApply: true
+priority: critical
+tags: [core, always-on, surgical-changes]
 ---
 
 # Surgical Changes

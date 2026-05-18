@@ -1,6 +1,8 @@
 ---
 description: Workflow rules for planning, implementing, reviewing, debugging, and reflecting.
 alwaysApply: false
+priority: high
+tags: [workflow, planning, implementation, review, debug]
 ---
 
 # Agent Workflow Rules

@@ -1,6 +1,8 @@
 ---
 description: Architecture conventions for this starter kit. Use when creating agents, tools, workflows, memory files, or examples.
 alwaysApply: false
+priority: medium
+tags: [architecture, project-structure, conventions]
 ---
 
 # Architecture Rules

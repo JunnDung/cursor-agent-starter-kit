@@ -1,6 +1,8 @@
 ---
 description: Documentation rules for README, guides, examples, and templates.
 alwaysApply: false
+priority: low
+tags: [documentation, writing, docs]
 ---
 
 # Documentation Rules

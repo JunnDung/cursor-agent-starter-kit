@@ -1,6 +1,8 @@
 ---
 description: Use when updating project memory, decisions, preferences, or learnings.
 alwaysApply: false
+priority: medium
+tags: [memory, documentation, decisions, preferences]
 ---
 
 # Memory Rules

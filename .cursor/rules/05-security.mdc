@@ -1,6 +1,8 @@
 ---
 description: Security rules for secrets, shell commands, dependencies, and repository safety.
 alwaysApply: true
+priority: critical
+tags: [security, always-on, secrets, dependencies]
 ---
 
 # Security Rules

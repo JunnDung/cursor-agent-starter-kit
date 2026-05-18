@@ -56,19 +56,19 @@ Summarize this project and recommend the next step.
 
 ```txt
 .cursor/
-  rules/              Persistent Cursor rules (9 rules)
-  skills/             Reusable task skills (6 skills)
+  rules/              Cursor rules (11 rules)
     routing.yaml     Thin-shell routing index
+  skills/             Skills for task-specific procedures
   agents/             Agent role definitions (6 agents)
-  workflows/          Repeatable workflows (7 workflows)
+  workflows/          Repeatable workflows (9 workflows)
   memory/             Project memory (4 files)
-  tasks/              Simple task tracking (3 files)
+  tasks/              Task tracking (backlog, active, done)
   templates/          Copyable templates (4 templates)
   examples/           Example agent ideas (3 examples)
-  docs/               Documentation (4 docs)
+  docs/               Documentation (Vietnamese guide)
 scripts/
   init-workspace.mjs # Workspace setup
-  validate-skills.mjs # Skill structure validator
+  validate-skills.mjs # Skill & rule structure validator
 ```
 
 ## Example Prompts
@@ -103,6 +103,18 @@ Use agents/bug-fixer.md and .cursor/skills/debug-bug/SKILL.md to find and fix th
 
 ```txt
 Use workflows/reflect.md to extract reusable learnings and update memory files.
+```
+
+### Evaluate quality
+
+```txt
+Use workflows/evaluator-optimizer.md to evaluate and refine before claiming done.
+```
+
+### Get approval before major changes
+
+```txt
+Use .cursor/rules/09-approval-workflow.mdc before implementing significant changes.
 ```
 
 ## Roadmap

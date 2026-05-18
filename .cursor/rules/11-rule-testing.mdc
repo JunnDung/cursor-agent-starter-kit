@@ -1,0 +1,63 @@
+---
+description: Testing patterns for Cursor agent rules. Validates that rules have proper structure and content.
+alwaysApply: false
+priority: low
+tags: [testing, validation, rules]
+---
+
+# Rule Testing Patterns
+
+Test your rules to catch drift early.
+
+## What to test
+
+### Structure tests
+
+For every `.mdc` file:
+
+- [ ] Has frontmatter (`--- ... ---`)
+- [ ] Has `description:` field
+- [ ] Has `alwaysApply:` field
+- [ ] Has `priority:` field
+- [ ] Has `tags:` field
+- [ ] Has `# Title` heading
+- [ ] Has `##` subsections
+
+### Content tests
+
+- [ ] `description` is one sentence
+- [ ] `alwaysApply` is boolean
+- [ ] Rules are actionable (no vague language)
+- [ ] Examples are realistic
+- [ ] No broken links to other files
+
+### Quality tests
+
+- [ ] File is under 150 lines
+- [ ] Language matches the project's tone
+- [ ] Sections follow consistent structure
+- [ ] Code blocks have language tags
+
+## How to run
+
+```bash
+npm run validate
+```
+
+This runs `scripts/validate-skills.mjs` which checks all skills and rule files.
+
+## When to test
+
+- After creating a new rule
+- After modifying an existing rule
+- Before committing
+- During code review
+
+## Fixing failures
+
+| Failure | Fix |
+|---|---|
+| Missing frontmatter | Add proper YAML frontmatter |
+| Missing description | Add one-sentence description |
+| File too long | Split into smaller rules |
+| Broken link | Update path to target file |

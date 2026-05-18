@@ -1,6 +1,8 @@
 ---
 description: Prevent common AI coding mistakes: wrong assumptions, overengineering, broad edits, weak verification, and hidden confusion.
 alwaysApply: true
+priority: critical
+tags: [core, always-on, quality]
 ---
 
 # Karpathy-Inspired Behavior Rules

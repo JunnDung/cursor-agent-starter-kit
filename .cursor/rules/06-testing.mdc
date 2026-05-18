@@ -1,6 +1,8 @@
 ---
 description: Testing and verification rules. Use when adding features, fixing bugs, or refactoring.
 alwaysApply: false
+priority: high
+tags: [testing, verification, quality]
 ---
 
 # Testing Rules

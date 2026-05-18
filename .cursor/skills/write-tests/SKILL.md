@@ -4,6 +4,14 @@
 
 Add tests for new features, bug fixes, or important workflows.
 
+## When to use
+
+Use this skill when the user asks to:
+- write tests
+- add tests
+- test this feature
+- add test coverage
+
 ## Steps
 
 1. Inspect the existing test framework.
