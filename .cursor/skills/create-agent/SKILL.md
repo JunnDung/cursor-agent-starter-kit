@@ -75,6 +75,10 @@ Use agents/agent-name.md to...
 ```
 ```
 
+## Extended Guide
+
+For deeper patterns and examples, see `.cursor/skills/create-agent/GUIDE.md`.
+
 ## Success criteria
 
 - agent is specific

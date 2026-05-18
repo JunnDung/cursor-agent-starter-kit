@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "init": "node scripts/init-workspace.mjs",
-    "check": "node scripts/init-workspace.mjs --check"
+    "check": "node scripts/init-workspace.mjs --check",
+    "validate": "node scripts/validate-skills.mjs"
   },
   "keywords": [
     "cursor",

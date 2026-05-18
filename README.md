@@ -27,6 +27,9 @@ This starter kit gives Cursor a structured workspace so your AI assistant can pl
 - templates
 - examples
 - Vietnamese guide
+- **two-layer skill structure** (SKILL.md + GUIDE.md)
+- **thin-shell routing** for fast skill reads
+- **skill validation** script
 
 ## Quick Start
 
@@ -35,6 +38,7 @@ git clone https://github.com/yourname/cursor-agent-starter-kit
 cd cursor-agent-starter-kit
 npm install
 npm run init
+npm run validate   # check skill structure
 ```
 
 Open the folder in Cursor.
@@ -49,15 +53,20 @@ Summarize this project and recommend the next step.
 ## Project Structure
 
 ```txt
-.cursor/rules/      Persistent Cursor rules
-.cursor/skills/     Reusable task skills
-agents/             Agent role definitions
-workflows/          Repeatable workflows
-memory/             Project memory
-tasks/              Simple task tracking
-templates/          Copyable templates
-examples/           Example agent ideas
-docs/               Documentation
+.cursor/
+  rules/              Persistent Cursor rules (9 rules)
+  skills/             Reusable task skills (6 skills)
+    routing.yaml     Thin-shell routing index
+  agents/             Agent role definitions (6 agents)
+  workflows/          Repeatable workflows (7 workflows)
+  memory/             Project memory (4 files)
+  tasks/              Simple task tracking (3 files)
+  templates/          Copyable templates (4 templates)
+  examples/           Example agent ideas (3 examples)
+  docs/               Documentation (4 docs)
+scripts/
+  init-workspace.mjs # Workspace setup
+  validate-skills.mjs # Skill structure validator
 ```
 
 ## Example Prompts
@@ -96,14 +105,29 @@ Use workflows/reflect.md to extract reusable learnings and update memory files.
 
 ## Roadmap
 
+### Completed
+
 - [x] Cursor rules
 - [x] AGENTS.md
 - [x] agent roles
 - [x] workflows
 - [x] skills
 - [x] memory
-- [ ] Next.js AI agent example
+- [x] two-layer skill structure (SKILL.md + GUIDE.md)
+- [x] thin-shell routing
+- [x] skill validation script
+
+### In Progress
+
+- [ ] Next.js AI agent example (fractal split-screen UI)
 - [ ] MCP setup guide
+
+### Planned
+
+- [ ] After-Action Review skill
+- [ ] Multi-agent skeleton (per-agent context)
+- [ ] GitHub issue triage agent
+- [ ] Skill validation CI check
 - [ ] CLI generator for new agents
 - [ ] docs website
 

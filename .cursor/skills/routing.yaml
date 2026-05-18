@@ -1,0 +1,26 @@
+# Skill Routing
+
+This file provides lightweight routing hints for skills. Each skill's `SKILL.md` should point here for extended context.
+
+## Routing Table
+
+| Skill | Trigger Phrases | Extended File |
+|---|---|---|
+| `create-agent` | "create agent", "new agent role", "build agent" | `create-agent/README.md` |
+| `create-tool` | "create tool", "new tool", "add MCP tool" | `create-tool/README.md` |
+| `code-review` | "review code", "review this", "check my changes" | `code-review/GUIDE.md` |
+| `debug-bug` | "debug", "find the bug", "fix this bug" | `debug-bug/GUIDE.md` |
+| `refactor-safely` | "refactor", "improve structure", "clean up code" | `refactor-safely/GUIDE.md` |
+| `write-tests` | "write tests", "add tests", "test this feature" | `write-tests/GUIDE.md` |
+
+## Two-Layer Pattern
+
+Each skill follows the two-layer pattern:
+
+1. **Always Read** — The `SKILL.md` contains purpose, when-to-use, and quick steps. Keep this under 100 lines.
+2. **Common Tasks** — Extended guides (`GUIDE.md`) contain deeper context, examples, and edge cases. Load only when needed.
+
+## Self-Maintenance Signals
+
+- If a skill's `SKILL.md` exceeds 120 lines, split extended content into a `GUIDE.md`.
+- If `routing.yaml` exceeds 80 entries, split into `routing/` per category.

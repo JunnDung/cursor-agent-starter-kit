@@ -2,16 +2,16 @@
 
 ## Purpose
 
-Describe what this skill helps with.
+Describe what this skill helps with in one sentence.
 
 ## When to use
 
 Use this skill when...
 
-## Inputs
+## Trigger phrases
 
-- input one
-- input two
+- "..."
+- "..."
 
 ## Steps
 
@@ -26,6 +26,10 @@ Result:
 Files changed:
 Verification:
 ```
+
+## Extended Guide
+
+For deeper patterns and examples, see `GUIDE.md` in the same folder.
 
 ## Success criteria
 

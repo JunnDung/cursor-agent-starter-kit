@@ -16,7 +16,16 @@ It provides:
 npm install
 npm run init
 npm run check
+npm run validate  # check skill structure
 ```
+
+## Skill Structure
+
+Each skill uses the two-layer pattern:
+- `SKILL.md` — Always read: purpose, when-to-use, quick steps (< 120 lines)
+- `GUIDE.md` — On demand: deeper patterns, examples, edge cases
+
+See `.cursor/skills/routing.yaml` for the skill index.
 
 ## Project map
 
