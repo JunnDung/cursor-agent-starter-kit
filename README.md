@@ -2,6 +2,8 @@
 
 A Cursor-first workspace template for building AI agents with rules, skills, memory, workflows, and safer coding behavior.
 
+> **Language:** [English](README.md) · [Tiếng Việt](docs/vietnamese-guide.md)
+
 ## Why this exists
 
 AI coding agents often fail in predictable ways:
