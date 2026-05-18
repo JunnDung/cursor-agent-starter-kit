@@ -119,17 +119,18 @@ Use workflows/reflect.md to extract reusable learnings and update memory files.
 
 ### In Progress
 
-- [ ] Next.js AI agent example (fractal split-screen UI)
-- [ ] MCP setup guide
+- [ ] MCP setup guide (`docs/mcp-setup.md`)
+- [ ] Skill validation CI check
+- [ ] After-Action Review skill
+- [ ] Interactive skill scaffolder (`generate-skill.mjs`)
 
 ### Planned
 
-- [ ] After-Action Review skill
-- [ ] Multi-agent skeleton (per-agent context)
 - [ ] GitHub issue triage agent
-- [ ] Skill validation CI check
+- [ ] Multi-agent skeleton (per-agent CLAUDE.md + MEMORY.md)
 - [ ] CLI generator for new agents
-- [ ] docs website
+- [ ] Troubleshooting guide (`docs/troubleshooting.md`)
+- [ ] CLI reference (`docs/cli-reference.md`)
 
 ## Philosophy
 

@@ -6,4 +6,7 @@
 - [x] Add skill validation script (scripts/validate-skills.mjs) (2026-05-18)
 - [x] Update memory/decisions.md with v0.2 architecture patterns (2026-05-18)
 - [x] Update memory/learnings.md with research findings (2026-05-18)
-- [ ] Research GitHub repos for roadmap inspiration (see research notes in memory/)
+- [ ] Add docs/mcp-setup.md (MCP server setup guide)
+- [ ] Add skill validation CI check (pre-commit / GitHub Actions)
+- [ ] Add After-Action Review skill (`.cursor/skills/aar/SKILL.md`)
+- [ ] Add scripts/generate-skill.mjs (interactive skill scaffolder)

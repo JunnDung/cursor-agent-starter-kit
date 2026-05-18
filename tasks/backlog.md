@@ -2,38 +2,47 @@
 
 Ordered by priority (highest first):
 
-## High Priority
+## High Priority (practical tooling)
 
-- [ ] Add Next.js AI agent example with split-screen fractal UI
-  - Next.js Parallel Routes pattern (persistent AI chat + main app)
-  - Based on research: aifa repo (fractal architecture)
-- [ ] Add MCP setup guide in `docs/mcp-setup.md`
+- [ ] Add `docs/mcp-setup.md`
   - .cursor/mcp.json configuration
   - TypeScript SDK v2 quickstart
   - Zod schema validation for tools
-  - Smithery.ai distribution setup
   - Inspector debugging guide
-- [ ] Add After-Action Review (AAR) skill
+  - Smithery.ai distribution setup
+- [ ] Add skill validation CI check
+  - Run `npm run validate` in pre-commit / GitHub Actions
+  - fail-fast on missing frontmatter or sections
+- [ ] Add After-Action Review skill (`.cursor/skills/aar/SKILL.md`)
   - Session Discipline + AAR workflow
+  - Prompt to update `memory/learnings.md` after non-trivial work
   - Line-count maintenance signals
-  - memory/learnings.md update prompts
+- [ ] Add `scripts/generate-skill.mjs`
+  - Interactive CLI to scaffold new skill from template
+  - Auto-register in `routing.yaml`
+  - Auto-create GUIDE.md stub
 
-## Medium Priority
+## Medium Priority (workflow improvements)
 
 - [ ] Add GitHub issue triage agent
+  - Parse issue body, classify severity, suggest assignee
+  - Based on CLAUDE.md + AGENTS.md context
 - [ ] Add multi-agent skeleton (per-agent CLAUDE.md + MEMORY.md)
-  - Based on teamfuse pattern (5 starter roles)
-- [ ] Add skill validation CI check
-  - Run `npm run validate` in pre-commit
-
-## Lower Priority
-
+  - Based on teamfuse pattern
+  - 3 starter roles: implementer, reviewer, debugger
 - [ ] Add CLI generator for new agents
-  - Interactive prompts for agent creation
+  - `npm run new:agent <name>` scaffold
   - Auto-register in AGENTS.md
+
+## Lower Priority (docs & polish)
+
+- [ ] Add `docs/troubleshooting.md`
+  - Common Cursor issues and fixes
+  - Skill not triggering? Check routing.yaml
+  - Rule not loading? Check frontmatter
+- [ ] Add `docs/cli-reference.md`
+  - Complete reference for all npm scripts
+  - All available agent and workflow prompts
 - [ ] Add docs website
   - Generated from skill definitions
-  - Hosted on GitHub Pages or Vercel
-- [ ] Add Generative UI example
-  - Based on agent-studio-starter
-  - LangGraph + CopilotKit template
+  - Hosted on GitHub Pages
