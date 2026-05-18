@@ -1,0 +1,23 @@
+---
+description: Short description of when this rule should apply.
+alwaysApply: false
+---
+
+# Rule Name
+
+## Purpose
+
+Explain the purpose of this rule.
+
+## Rules
+
+- Rule one.
+- Rule two.
+- Rule three.
+
+## Output format
+
+```txt
+Result:
+Notes:
+```

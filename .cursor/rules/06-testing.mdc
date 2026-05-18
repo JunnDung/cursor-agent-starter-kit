@@ -1,0 +1,44 @@
+---
+description: Testing and verification rules. Use when adding features, fixing bugs, or refactoring.
+alwaysApply: false
+---
+
+# Testing Rules
+
+Every non-trivial change needs verification.
+
+## Preferred checks
+
+Use existing project commands first:
+
+```bash
+npm run check
+npm test
+npm run lint
+npm run typecheck
+```
+
+## When adding a feature
+
+Add or update tests for:
+- expected behavior
+- edge cases
+- failure cases
+
+## When fixing a bug
+
+Add a regression test when practical.
+
+## When tests cannot be run
+
+Say so clearly and provide the exact command the user should run.
+
+## Completion format
+
+```txt
+Verification:
+- Ran:
+- Result:
+- Not run:
+- Reason:
+```

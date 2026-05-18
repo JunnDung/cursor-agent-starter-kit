@@ -1,0 +1,66 @@
+---
+description: Architecture conventions for this starter kit. Use when creating agents, tools, workflows, memory files, or examples.
+alwaysApply: false
+---
+
+# Architecture Rules
+
+This project has five main concepts.
+
+## 1. Rules
+
+Rules live in `.cursor/rules/`.
+
+Use rules for persistent behavior and project conventions.
+
+## 2. Skills
+
+Skills live in `.cursor/skills/`.
+
+Use skills for task-specific procedures that can be invoked when needed.
+
+A skill should include:
+- purpose
+- when to use
+- inputs
+- steps
+- output format
+- examples
+
+## 3. Agents
+
+Agents live in `agents/`.
+
+An agent is a reusable role definition.
+
+Each agent file should include:
+- purpose
+- when to use
+- process
+- boundaries
+- output format
+
+## 4. Workflows
+
+Workflows live in `workflows/`.
+
+A workflow is a repeatable process.
+
+Each workflow should include:
+- goal
+- required context
+- steps
+- success criteria
+- failure handling
+
+## 5. Memory
+
+Memory lives in `memory/`.
+
+Use memory for:
+- project goals
+- user preferences
+- architecture decisions
+- lessons learned
+
+Do not put all memory into always-on rules.

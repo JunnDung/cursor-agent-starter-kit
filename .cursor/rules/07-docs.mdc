@@ -1,0 +1,37 @@
+---
+description: Documentation rules for README, guides, examples, and templates.
+alwaysApply: false
+---
+
+# Documentation Rules
+
+Documentation should be practical and easy to scan.
+
+## README
+
+The README should explain:
+- what this repo is
+- why it exists
+- quick start
+- project structure
+- how to use with Cursor
+- available rules
+- available skills
+- example prompts
+- roadmap
+
+## Docs
+
+Docs should include:
+- short explanations
+- copyable prompts
+- examples
+- clear next steps
+
+## Style
+
+- Prefer concise language.
+- Use headings.
+- Use code blocks for prompts and commands.
+- Avoid hype without substance.
+- Make examples realistic.

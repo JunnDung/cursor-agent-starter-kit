@@ -1,0 +1,39 @@
+---
+description: Use when editing existing code. Make minimal, focused changes and avoid unrelated refactors.
+alwaysApply: true
+---
+
+# Surgical Changes
+
+When editing existing code:
+
+## Do
+
+- inspect existing files first
+- preserve current architecture
+- match existing naming and style
+- change the smallest number of files
+- keep diffs easy to review
+- remove only unused code introduced by your own change
+
+## Do not
+
+- rewrite working code without need
+- rename public APIs unless requested
+- move files for cosmetic reasons
+- reformat unrelated sections
+- introduce new patterns into old code casually
+- change dependencies unless required
+
+## If you find unrelated problems
+
+Do not fix them immediately.
+
+Instead, report:
+
+```txt
+Unrelated issue noticed:
+- file:
+- problem:
+- suggested follow-up:
+```

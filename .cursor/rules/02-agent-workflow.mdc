@@ -1,0 +1,36 @@
+---
+description: Workflow rules for planning, implementing, reviewing, debugging, and reflecting.
+alwaysApply: false
+---
+
+# Agent Workflow Rules
+
+Use the right workflow for the task.
+
+## Planning
+
+Use `workflows/plan.md` when:
+- the task is non-trivial
+- multiple files may change
+- architecture may be affected
+- the user asks for a plan
+
+## Implementation
+
+Use `agents/implementer.md` and `workflows/implement.md` when building features.
+
+## Review
+
+Use `agents/code-reviewer.md` and `workflows/review.md` when reviewing code.
+
+## Debugging
+
+Use `agents/bug-fixer.md` and `workflows/debug.md` when fixing bugs.
+
+## Reflection
+
+Use `workflows/reflect.md` after repeated corrections or meaningful decisions.
+
+## Rule
+
+Do not mix planning, implementation, review, and reflection unless the user requests an end-to-end workflow.

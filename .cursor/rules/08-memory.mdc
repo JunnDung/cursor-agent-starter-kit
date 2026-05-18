@@ -1,0 +1,49 @@
+---
+description: Use when updating project memory, decisions, preferences, or learnings.
+alwaysApply: false
+---
+
+# Memory Rules
+
+Memory files live in `memory/`.
+
+## Files
+
+- `memory/project.md`: project identity and goals
+- `memory/preferences.md`: user and team preferences
+- `memory/decisions.md`: architecture decisions
+- `memory/learnings.md`: repeated lessons and corrections
+
+## When to update memory
+
+Update memory when:
+- the user states a lasting preference
+- an architecture decision is made
+- a mistake is corrected repeatedly
+- a reusable lesson emerges
+- a project goal changes
+
+## Do not store
+
+Do not store:
+- secrets
+- private credentials
+- temporary task details
+- sensitive personal data
+- unverified assumptions
+
+## Reflection output
+
+```txt
+Memory updates:
+- file:
+- change:
+
+Rule candidates:
+- proposed rule:
+- reason:
+
+Task updates:
+- task:
+- status:
+```

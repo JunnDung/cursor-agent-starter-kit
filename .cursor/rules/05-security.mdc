@@ -1,0 +1,50 @@
+---
+description: Security rules for secrets, shell commands, dependencies, and repository safety.
+alwaysApply: true
+---
+
+# Security Rules
+
+## Secrets
+
+Never read, print, modify, or commit secrets.
+
+Sensitive files include:
+- `.env`
+- `.env.local`
+- `.env.production`
+- `.pem`
+- `.key`
+- `.p12`
+- credential files
+- private tokens
+
+Use `.env.example` for documentation.
+
+## Shell commands
+
+Before suggesting or running commands, check risk.
+
+Avoid:
+- `rm -rf`
+- `git push --force`
+- direct push to `main` or `master`
+- destructive database commands
+- commands outside the project root
+
+## Dependencies
+
+Do not add dependencies unless:
+- the task clearly needs it
+- the existing stack cannot solve it simply
+- the reason is explained
+
+## Output
+
+If a security concern exists, report:
+
+```txt
+Security concern:
+Risk:
+Safer alternative:
+```

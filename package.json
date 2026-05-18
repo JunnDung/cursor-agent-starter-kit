@@ -1,0 +1,20 @@
+{
+  "name": "cursor-agent-starter-kit",
+  "version": "0.1.0",
+  "description": "A Cursor-first workspace template for building AI agents with rules, skills, memory, workflows, and safer coding behavior.",
+  "type": "module",
+  "scripts": {
+    "init": "node scripts/init-workspace.mjs",
+    "check": "node scripts/init-workspace.mjs --check"
+  },
+  "keywords": [
+    "cursor",
+    "ai-agent",
+    "agents",
+    "cursor-rules",
+    "agentic-coding",
+    "starter-kit",
+    "ai-coding"
+  ],
+  "license": "MIT"
+}

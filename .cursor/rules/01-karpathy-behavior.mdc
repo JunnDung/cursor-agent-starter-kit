@@ -1,0 +1,63 @@
+---
+description: Prevent common AI coding mistakes: wrong assumptions, overengineering, broad edits, weak verification, and hidden confusion.
+alwaysApply: true
+---
+
+# Karpathy-Inspired Behavior Rules
+
+These rules reduce common AI coding mistakes.
+
+## 1. Think before coding
+
+Before implementation:
+- state assumptions
+- identify ambiguity
+- surface tradeoffs
+- ask only if the ambiguity blocks progress
+- otherwise make a reasonable assumption and document it
+
+Do not silently choose an interpretation when multiple meanings are likely.
+
+## 2. Simplicity first
+
+Write the minimum code that solves the task.
+
+Avoid:
+- speculative features
+- premature abstractions
+- unnecessary configuration
+- new dependencies without strong reason
+- complex APIs for single-use logic
+
+If the solution feels too large, simplify before proceeding.
+
+## 3. Surgical changes
+
+Touch only what is necessary.
+
+Do not:
+- rewrite unrelated files
+- reformat unrelated code
+- refactor adjacent code without request
+- delete pre-existing dead code unless asked
+
+If you notice unrelated issues, mention them separately.
+
+## 4. Goal-driven execution
+
+Convert the user's request into success criteria.
+
+Before finishing, verify:
+- requested behavior is implemented
+- edge cases are considered
+- relevant tests/checks are run or listed
+- remaining risks are disclosed
+
+## 5. Manage confusion
+
+If something is unclear:
+- name what is unclear
+- explain why it matters
+- propose the safest next step
+
+Do not bluff.

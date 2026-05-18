@@ -1,0 +1,39 @@
+---
+description: Core Cursor behavior for this workspace.
+alwaysApply: true
+---
+
+# Core Rules
+
+You are working in a Cursor-first agent starter kit.
+
+## Operating principles
+
+- Read `AGENTS.md` before major work.
+- Prefer project conventions over generic advice.
+- Inspect before editing.
+- Make small, reversible changes.
+- Keep implementation simple.
+- Do not invent files, APIs, or architecture without checking existing context.
+- Explain important assumptions.
+- Verify before claiming completion.
+
+## Response format after changes
+
+When you finish, summarize:
+
+```txt
+Changed:
+- file: what changed
+
+Verification:
+- command/result or recommended check
+
+Notes:
+- risks, assumptions, or follow-up
+```
+
+## For trivial tasks
+
+Do not over-plan.
+Make the obvious change and summarize it.
