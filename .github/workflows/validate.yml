@@ -1,0 +1,57 @@
+name: Validate Skills and Rules
+on:
+  push:
+    paths:
+      - '.cursor/rules/**'
+      - '.cursor/skills/**'
+      - 'scripts/validate-skills.mjs'
+  pull_request:
+    paths:
+      - '.cursor/rules/**'
+      - '.cursor/skills/**'
+      - 'scripts/validate-skills.mjs'
+
+jobs:
+  validate-skills:
+    name: Validate skill & rule structure
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run skill validator
+        run: npm run validate
+
+  lint-context:
+    name: Lint AI context files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Lint AI context files
+        uses: MrDwarf7/ai-context-linter@v1
+        with:
+          files: "**/{AGENTS.md,CLAUDE.md,.cursorrules,.cursor/rules/*.mdc}"
+          max-tokens: "3000"
+          fail-on-warnings: "false"
+
+  audit-baseline:
+    name: Audit AGENTS.md baseline compliance
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run CC audit
+        uses: sisyphusse1-ops/cc-audit@v1
+        with:
+          fail-on-warning: "false"

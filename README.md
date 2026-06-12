@@ -20,8 +20,10 @@ This starter kit gives Cursor a structured workspace so your AI assistant can pl
 
 - Cursor project rules
 - `AGENTS.md` for coding agents
+- `CLAUDE.md` for cross-tool compatibility (Cursor + Claude Code + Codex)
 - reusable agent roles
 - reusable Cursor skills
+- **After-Action Review (AAR) skill** for session reflection
 - repeatable workflows
 - project memory
 - task tracking
@@ -31,7 +33,10 @@ This starter kit gives Cursor a structured workspace so your AI assistant can pl
 - Vietnamese guide
 - **two-layer skill structure** (SKILL.md + GUIDE.md)
 - **thin-shell routing** for fast skill reads
-- **skill validation** script
+- **skill validation** script + **GitHub Actions CI**
+- **MCP setup guide** for Cursor IDE and CLI
+- **interactive skill scaffolder** (`npm run generate:skill`)
+- **troubleshooting guide** + **CLI reference**
 
 ## Quick Start
 
@@ -58,17 +63,20 @@ Summarize this project and recommend the next step.
 .cursor/
   rules/              Cursor rules (11 rules)
     routing.yaml     Thin-shell routing index
-  skills/             Skills for task-specific procedures
-  agents/             Agent role definitions (6 agents)
-  workflows/          Repeatable workflows (9 workflows)
-  memory/             Project memory (4 files)
-  tasks/              Task tracking (backlog, active, done)
-  templates/          Copyable templates (4 templates)
-  examples/           Example agent ideas (3 examples)
-  docs/               Documentation (Vietnamese guide)
+  skills/             Skills for task-specific procedures (7 skills)
+.github/
+  workflows/          GitHub Actions CI pipelines
+agents/               Agent role definitions (6 agents)
+workflows/            Repeatable workflows (9 workflows)
+memory/               Project memory (4 files)
+tasks/                Task tracking (backlog, active, done)
+templates/            Copyable templates (4 templates)
+examples/             Example agent ideas (3 examples)
+docs/                 Documentation (MCP setup, troubleshooting, CLI ref, Vietnamese guide)
 scripts/
-  init-workspace.mjs # Workspace setup
-  validate-skills.mjs # Skill & rule structure validator
+  init-workspace.mjs   # Workspace setup
+  validate-skills.mjs  # Skill & rule structure validator
+  generate-skill.mjs   # Interactive skill scaffolder
 ```
 
 ## Example Prompts
@@ -102,7 +110,13 @@ Use agents/bug-fixer.md and .cursor/skills/debug-bug/SKILL.md to find and fix th
 ### Reflect after a session
 
 ```txt
-Use workflows/reflect.md to extract reusable learnings and update memory files.
+Use .cursor/skills/aar/SKILL.md to run an after-action review of this session.
+```
+
+### Generate a new skill
+
+```txt
+Run npm run generate:skill to scaffold a new skill from the template.
 ```
 
 ### Evaluate quality
@@ -123,6 +137,7 @@ Use .cursor/rules/09-approval-workflow.mdc before implementing significant chang
 
 - [x] Cursor rules
 - [x] AGENTS.md
+- [x] CLAUDE.md (cross-tool compatibility)
 - [x] agent roles
 - [x] workflows
 - [x] skills
@@ -130,21 +145,26 @@ Use .cursor/rules/09-approval-workflow.mdc before implementing significant chang
 - [x] two-layer skill structure (SKILL.md + GUIDE.md)
 - [x] thin-shell routing
 - [x] skill validation script
+- [x] MCP setup guide
+- [x] GitHub Actions CI validation
+- [x] After-Action Review skill
+- [x] Interactive skill scaffolder
+- [x] Troubleshooting guide
+- [x] CLI reference
 
 ### In Progress
 
-- [ ] MCP setup guide (`docs/mcp-setup.md`)
-- [ ] Skill validation CI check
-- [ ] After-Action Review skill
-- [ ] Interactive skill scaffolder (`generate-skill.mjs`)
+- [ ] crag compiler integration (governance.md cross-tool sync)
+- [ ] agentmemory integration guide
+- [ ] Cursor hooks documentation
+- [ ] Cursor plugin template
 
 ### Planned
 
 - [ ] GitHub issue triage agent
 - [ ] Multi-agent skeleton (per-agent CLAUDE.md + MEMORY.md)
 - [ ] CLI generator for new agents
-- [ ] Troubleshooting guide (`docs/troubleshooting.md`)
-- [ ] CLI reference (`docs/cli-reference.md`)
+- [ ] Docs website (GitHub Pages)
 
 ## Philosophy
 

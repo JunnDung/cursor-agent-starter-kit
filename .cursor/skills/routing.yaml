@@ -6,6 +6,7 @@ This file provides lightweight routing hints for skills. Each skill's `SKILL.md`
 
 | Skill | Trigger Phrases | Extended File |
 |---|---|---|
+| `aar` | "reflect", "after-action review", "what did we learn", "session summary", "lessons learned" | `aar/GUIDE.md` |
 | `create-agent` | "create agent", "new agent role", "build agent" | `create-agent/GUIDE.md` |
 | `create-tool` | "create tool", "new tool", "add MCP tool" | `create-tool/GUIDE.md` |
 | `code-review` | "review code", "review this", "check my changes" | `code-review/GUIDE.md` |

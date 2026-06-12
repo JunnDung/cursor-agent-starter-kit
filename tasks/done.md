@@ -25,3 +25,29 @@ Completed tasks will be moved here.
 - [x] Extended guides for create-agent, code-review, debug-bug, refactor-safely, write-tests, create-tool
 - [x] Updated memory with research findings
 - [x] Updated backlog with prioritized roadmap
+
+## v0.3 (2026-06-13)
+
+- [x] MCP setup guide (`docs/mcp-setup.md`)
+  - `.cursor/mcp.json` configuration with Smithery.ai
+  - Cursor CLI MCP commands reference
+- [x] GitHub Actions CI validation (`.github/workflows/validate.yml`)
+  - Skill & rule structure validation
+  - AI context linting (MrDwarf7/ai-context-linter)
+  - 12-rule baseline audit (sisyphusse1-ops/cc-audit)
+- [x] After-Action Review skill (`.cursor/skills/aar/SKILL.md` + GUIDE.md)
+  - Structured session reflection workflow
+  - Skill health check and self-maintenance signals
+  - Quick-capture mode for trivial sessions
+- [x] Interactive skill scaffolder (`scripts/generate-skill.mjs`)
+  - Non-interactive mode via env vars
+  - Auto-updates routing.yaml
+- [x] Troubleshooting guide (`docs/troubleshooting.md`)
+- [x] CLI reference (`docs/cli-reference.md`)
+- [x] Cross-tool compatibility: added `CLAUDE.md`
+- [x] Updated research findings with 2026-06-13 landscape
+  - agentmemory, crag compiler, agent-guardrails
+  - Agent Skills specification (agentskills.io)
+  - Cursor plugin directory structure
+- [x] Updated package.json with `generate:skill` script
+- [x] Updated routing.yaml with AAR skill entry

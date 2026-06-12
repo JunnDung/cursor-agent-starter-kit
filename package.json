@@ -6,7 +6,9 @@
   "scripts": {
     "init": "node scripts/init-workspace.mjs",
     "check": "node scripts/init-workspace.mjs --check",
-    "validate": "node scripts/validate-skills.mjs"
+    "validate": "node scripts/validate-skills.mjs",
+    "generate:skill": "node scripts/generate-skill.mjs",
+    "validate:all": "npm run validate && npm run check"
   },
   "keywords": [
     "cursor",

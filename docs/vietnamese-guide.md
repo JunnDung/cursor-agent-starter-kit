@@ -7,7 +7,7 @@
 Repo này cung cấp:
 
 - rules cho Cursor
-- file `AGENTS.md`
+- file `AGENTS.md` và `CLAUDE.md` (cross-tool)
 - agent role có thể tái sử dụng
 - workflow làm việc
 - skill cho các tác vụ lặp lại
@@ -15,6 +15,10 @@ Repo này cung cấp:
 - task tracking đơn giản
 - templates và examples
 - hướng dẫn bằng tiếng Việt
+- After-Action Review (AAR) skill cho phản ánh session
+- MCP setup guide
+- troubleshooting guide
+- CLI reference
 
 ## Cách dùng nhanh
 
@@ -65,15 +69,16 @@ Repo này giúp Cursor làm việc có quy trình hơn: có rules rõ ràng, có
 ## Cấu trúc repo
 
 ```txt
-.cursor/rules/     Cursor rules (9 files)
-.cursor/skills/    Skills cho tác vụ cụ thể
+.cursor/rules/     Cursor rules (11 files)
+.cursor/skills/    Skills cho tác vụ cụ thể (7 skills)
+.github/workflows/  GitHub Actions CI
 agents/            Agent roles
 workflows/         Workflows làm việc
 memory/            Memory cho project
 tasks/             Backlog và task tracking
 templates/          Templates để copy
 examples/          Ví dụ agent
-docs/              Tài liệu
+docs/              Tài liệu (MCP setup, troubleshooting, CLI ref, tiếng Việt)
 ```
 
 ## Setup
@@ -81,8 +86,15 @@ docs/              Tài liệu
 ```bash
 npm install
 npm run init
-npm run validate   # kiểm tra skill structure
+npm run validate        # kiểm tra skill structure
+npm run generate:skill  # tạo skill mới (interactive)
 ```
+
+## Docs mới
+
+- `docs/mcp-setup.md` — Hướng dẫn cài đặt MCP server
+- `docs/troubleshooting.md` — Giải quyết vấn đề thường gặp
+- `docs/cli-reference.md` — Tham chiếu CLI đầy đủ
 
 ## Nguyên tắc cốt lõi
 
