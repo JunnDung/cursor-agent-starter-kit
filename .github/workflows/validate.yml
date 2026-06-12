@@ -38,7 +38,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Lint AI context files
-        uses: MrDwarf7/ai-context-linter@v1
+        uses: MrDwarf7/ai-context-linter@v1.0.0
         with:
           files: "**/{AGENTS.md,CLAUDE.md,.cursorrules,.cursor/rules/*.mdc}"
           max-tokens: "3000"
