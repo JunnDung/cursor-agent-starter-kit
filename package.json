@@ -1,14 +1,18 @@
 {
   "name": "cursor-agent-starter-kit",
-  "version": "0.1.0",
-  "description": "A Cursor-first workspace template for building AI agents with rules, skills, memory, workflows, and safer coding behavior.",
+  "version": "0.3.0",
+  "description": "A Cursor-first AI agent workspace template with rules, skills, workflows, memory, and zero-config setup.",
   "type": "module",
   "scripts": {
     "init": "node scripts/init-workspace.mjs",
     "check": "node scripts/init-workspace.mjs --check",
     "validate": "node scripts/validate-skills.mjs",
     "generate:skill": "node scripts/generate-skill.mjs",
-    "validate:all": "npm run validate && npm run check"
+    "generate:agent": "node scripts/generate-agent.mjs",
+    "validate:all": "npm run validate && npm run check",
+    "crag:analyze": "npx @whitehatd/crag analyze",
+    "crag:compile": "npx @whitehatd/crag compile --target all",
+    "crag:audit": "npx @whitehatd/crag audit"
   },
   "keywords": [
     "cursor",

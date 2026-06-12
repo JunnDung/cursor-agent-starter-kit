@@ -17,7 +17,21 @@ npm install
 npm run init
 npm run check
 npm run validate  # check skill & rule structure
+npm run generate:skill  # scaffold a new skill (interactive)
+npm run generate:agent  # scaffold a new agent (interactive)
 ```
+
+## npm Scripts
+
+| Command | Purpose |
+|---|---|
+| `npm run init` | Initialize workspace directories |
+| `npm run check` | Check workspace structure |
+| `npm run validate` | Validate skill & rule structure |
+| `npm run generate:skill` | Scaffold a new skill |
+| `npm run generate:agent` | Scaffold a new agent |
+| `npm run crag:analyze` | Generate governance.md (requires crag) |
+| `npm run crag:compile` | Compile rules to all agent formats |
 
 ## Skill Structure
 

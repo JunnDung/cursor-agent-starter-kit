@@ -1,0 +1,24 @@
+{
+  "manifestVersion": "1.0.0",
+  "name": "cursor-agent-starter-kit",
+  "version": "0.3.0",
+  "description": "A Cursor-first AI agent workspace template with rules, skills, workflows, memory, and zero-config setup.",
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "rules": {
+    "description": "Auto-generated rules for this plugin"
+  },
+  "skills": {
+    "description": "Auto-generated skills for this plugin"
+  },
+  "agents": {
+    "description": "Auto-generated agents for this plugin"
+  },
+  "commands": {
+    "description": "Auto-generated commands for this plugin"
+  }
+}

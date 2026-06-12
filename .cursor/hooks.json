@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "./session-start.sh",
+        "timeoutSec": 10
+      }
+    ],
+    "sessionEnd": [
+      {
+        "command": "./session-end.sh",
+        "timeoutSec": 10
+      }
+    ],
+    "preToolUse": [
+      {
+        "command": "./pre-tool-validate.sh",
+        "matcher": "Shell"
+      }
+    ],
+    "postToolUse": [
+      {
+        "command": "./post-tool-audit.sh"
+      }
+    ],
+    "stop": [
+      {
+        "command": "./stop-session.sh",
+        "timeoutSec": 5
+      }
+    ]
+  }
+}

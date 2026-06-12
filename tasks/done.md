@@ -1,6 +1,6 @@
 # Done
 
-Completed tasks will be moved here.
+Completed tasks are moved here.
 
 ## v0.1 (2026-05-18)
 
@@ -29,25 +29,30 @@ Completed tasks will be moved here.
 ## v0.3 (2026-06-13)
 
 - [x] MCP setup guide (`docs/mcp-setup.md`)
-  - `.cursor/mcp.json` configuration with Smithery.ai
-  - Cursor CLI MCP commands reference
 - [x] GitHub Actions CI validation (`.github/workflows/validate.yml`)
-  - Skill & rule structure validation
-  - AI context linting (MrDwarf7/ai-context-linter)
-  - 12-rule baseline audit (sisyphusse1-ops/cc-audit)
 - [x] After-Action Review skill (`.cursor/skills/aar/SKILL.md` + GUIDE.md)
-  - Structured session reflection workflow
-  - Skill health check and self-maintenance signals
-  - Quick-capture mode for trivial sessions
 - [x] Interactive skill scaffolder (`scripts/generate-skill.mjs`)
-  - Non-interactive mode via env vars
-  - Auto-updates routing.yaml
 - [x] Troubleshooting guide (`docs/troubleshooting.md`)
 - [x] CLI reference (`docs/cli-reference.md`)
 - [x] Cross-tool compatibility: added `CLAUDE.md`
 - [x] Updated research findings with 2026-06-13 landscape
-  - agentmemory, crag compiler, agent-guardrails
-  - Agent Skills specification (agentskills.io)
-  - Cursor plugin directory structure
-- [x] Updated package.json with `generate:skill` script
+- [x] Updated package.json with generate:skill script
 - [x] Updated routing.yaml with AAR skill entry
+- [x] ai-context-linter v1.0.0 version fix
+
+## v0.4 (2026-06-13)
+
+- [x] crag compiler integration guide (`docs/crag-integration.md`)
+- [x] agentmemory integration guide (`docs/agentmemory-setup.md`)
+- [x] Cursor hooks system (`docs/hooks-guide.md`)
+- [x] Hook scripts: session-start, session-end, pre-tool-validate, post-tool-audit, stop-session
+- [x] Hook config: `.cursor/hooks.json`
+- [x] CLI agent generator (`scripts/generate-agent.mjs`)
+- [x] GitHub Actions agent workflow (`agent-workflow.yml`)
+- [x] Cursor plugin template (`.cursor-plugin/plugin.json`)
+- [x] MCP config example (`.cursor/mcp.json.example`)
+- [x] Package.json: added generate:agent + crag scripts, bumped to v0.3.0
+- [x] README fully rewritten with copy-paste quick start + comprehensive reference
+- [x] CURSOR.md rewritten as comprehensive quick reference
+- [x] AGENTS.md updated with extended npm scripts + docs section
+- [x] Vietnamese guide updated with new docs list + setup commands
